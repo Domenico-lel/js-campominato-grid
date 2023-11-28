@@ -11,10 +11,10 @@ for (let i = 0; i < 64; i++){
 
     const newElement = createMyElement("div", "square");
 
-    newElement.addEventListner("click",
-    
+    newElement.addEventListener("click",
+
         function () {
-            newElement.classList.add("clicked");
+            this.classList.add("clicked");
         }
     );
     

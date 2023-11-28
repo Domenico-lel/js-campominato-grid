@@ -35,7 +35,7 @@ div#grid .square{
     border: solid 2px #fff;
 }
 
-div#grid .square .clicked{
+div#grid .square.clicked{
     background-color: #7fffda;
 }
 
