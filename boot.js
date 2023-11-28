@@ -7,27 +7,25 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro e
 // sezione dell' elemento contenitore
 const gridElement = document.getElementById("grid");
 
-for (let i = 0; i < 64; i++){
-
+for (let i = 1; i <= 64; i++) {
     const newElement = createMyElement("div", "square");
+    
+    // Aggiungi il numero come testo all'interno del div
+    newElement.textContent = i;
 
-    newElement.addEventListener("click",
-
+    newElement.addEventListener("click", 
         function () {
             this.classList.add("clicked");
         }
     );
-    
-    gridElement.append(newElement);
-    
-}
 
+    gridElement.append(newElement);
+}
 
 // definizione funzione 
 function createMyElement(tagtype, classname) {
     const currentElement = document.createElement(tagtype);
     currentElement.classList.add(classname);
-
     return currentElement;
 }
 
