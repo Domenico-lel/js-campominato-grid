@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #041528;
+}
+
+main{
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+div#grid{
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+}
+
+div#grid .square{
+    float: left;
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    cursor: crosshair;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+div#grid,
+div#grid .square{
+    border: solid 2px #fff;
+}
+
+div#grid .square .clicked{
+    background-color: #7fffda;
+}
+
+.crearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
