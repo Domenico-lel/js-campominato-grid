@@ -17,6 +17,7 @@ for (let i = 1; i <= 64; i++) {
     newElement.addEventListener("click",
         function () {
             this.classList.add("clicked");
+            console.log("hai cliccato la cella:" + i)
         }
     );
 
